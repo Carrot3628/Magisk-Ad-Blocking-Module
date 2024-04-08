@@ -16,14 +16,14 @@ jobs:
         run: |
           cd downloads
           # Get latest version of BlockAds
-          fileVersion=$(curl -s "https://api.github.com/repos/pantsufan/Magisk-Ad-Blocking-Module/tags" | jq -r '.[0].name')
+          fileVersion=$(curl -s "https://api.github.com/repos/Carrot3628/Magisk-Ad-Blocking-Module/tags" | jq -r '.[0].name')
           echo $fileVersion
           fileName="BlockAds-$fileVersion.zip"
           echo $fileName
-          fileURL="https://github.com/pantsufan/Magisk-Ad-Blocking-Module/releases/download/$fileVersion/$fileName"
+          fileURL="https://github.com/Carrot3628/Magisk-Ad-Blocking-Module/releases/download/$fileVersion/$fileName"
           wget -q $fileURL
           unzip -d ZIP $fileName
-          wget -q https://raw.githubusercontent.com/pantsufan/Magisk-Ad-Blocking-Module/master/hosts
+          wget -q https://raw.githubusercontent.com/Carrot3628/Magisk-Ad-Blocking-Module/master/hosts
           cp -u hosts ZIP/system/etc/
           rm hosts
           rm $fileName

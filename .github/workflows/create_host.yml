@@ -1,8 +1,8 @@
 name: Build New Hosts File
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 8 * * *"
+  # schedule:
+  #   - cron: "0 8 * * *"
 
 jobs:
   build-hosts:
@@ -14,8 +14,8 @@ jobs:
 
     - name: setup git config
       run: |
-        git config user.name "pantsufan"
-        git config user.email "joel28@protonmail.com"
+        git config user.name "Carrot3628"
+        git config user.email "166365286+Carrot3628@users.noreply.github.com"
 
     - name: Remove old file
       run: |
