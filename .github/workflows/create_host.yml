@@ -48,10 +48,10 @@ jobs:
         rm AdguardMobileAds.txt
         rm AdguardMobileSpyware.txt
         wget https://raw.githubusercontent.com/4skinSkywalker/Anti-Porn-HOSTS-File/master/HOSTS.txt
-        sed -i "1,32d" hosts
+        sed -i "1,32d" HOSTS.txt
         echo "" >> OISD.txt
-        cat hosts >> OISD.txt
-        rm hosts
+        cat HOSTS.txt >> OISD.txt
+        rm HOSTS.txt
         mv OISD.txt hosts
         awk '!seen[$0]++' hosts > hosts_filter
         {
