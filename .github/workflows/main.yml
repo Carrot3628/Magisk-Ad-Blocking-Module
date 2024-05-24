@@ -2,9 +2,11 @@ name: BlockAds
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - build
+  # push:
+  #   branches:
+  #     - build
+  schedule:
+    - cron: "0 8 1,15 * *"
 
 jobs:
   build:
