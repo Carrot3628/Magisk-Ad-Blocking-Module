@@ -42,11 +42,11 @@ jobs:
           fi
           # Format the new version
           newVersion="v${major}.${minor}"
-          echo "id=SH_Blocker
+          echo "id=SH_Blocker_Edit
           name=BlockADs
           version=$newVersion
           versionCode=7
-          author=Kninja
+          author=Carrot3628
           description=🔥️ Say Goodbye To Ads Forever" > module.prop
           zip -r BlockAds-$newVersion.zip *
           mkdir temp
