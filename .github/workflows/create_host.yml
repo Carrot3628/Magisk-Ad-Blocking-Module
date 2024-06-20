@@ -47,7 +47,7 @@ jobs:
         cat AdguardMobileAds.txt >> OISD.txt
         rm AdguardMobileAds.txt
         rm AdguardMobileSpyware.txt
-        wget https://raw.githubusercontent.com/4skinSkywalker/Anti-Porn-HOSTS-File/master/HOSTS.txt
+        wget https://raw.githubusercontent.com/Carrot3628/Anti-Porn-HOSTS-File/master/HOSTS.txt
         sed -i "1,32d" HOSTS.txt
         echo "" >> OISD.txt
         cat HOSTS.txt >> OISD.txt
